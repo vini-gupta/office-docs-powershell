@@ -60,7 +60,7 @@ Add-SPMTTask -FileShareSource $Global:FileshareSource -TargetSiteUrl $Global:SPO
 #Start Migration in the background.#
 Start-SPMTMigration -NoShow
 
-#Remove an existing migration task from the migration. Remember to replace the "XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" with your actual TaskID. You can get the TaskID in the console if the migration is running without -NoShow parameter. If the migration is running with -NoShow parameter, then find the TaskID after running "Get-SPMTMigration" first.#
+#Remove an existing migration task from the migration. Remember to replace the "XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" with your actual TaskID. You can get the TaskID in the console if the migration is running without -NoShow parameter. If the migration is running with -NoShow parameter, then find the TaskID after running "Get-SPMTMigration" firsts.#
 Remove-SPMTTask -TaskID XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX -Force
 ```
 
